@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     position: relative;
     background: radial-gradient(#E8F7FF, #30C4D3,#006C77);
@@ -24,13 +30,22 @@ nav {
     display: flex;
     justify-content: flex-end;
     padding: 20px;
+    
 }
+
 
 .nav-links > li {
     font-size: 1.2rem;
     margin: auto 15px;
 }
 
+.nav-links a {
+    text-decoration: none;
+}
+
+.nav-links a:visited {
+    color: whitesmoke;
+}
 
 .nav-logo {
     display: flex;
@@ -69,9 +84,9 @@ h1, h2 {
     text-align: center;
 }
 
-.lapad {
+.jump {
     margin-left: 300px;
-    position: absolute;
+    margin-bottom: 300px;
     animation: slide 0.3s ease-in infinite alternate;
 }
 
@@ -81,11 +96,9 @@ h1, h2 {
 }
 
 .rotate {
-    position: absolute;
     margin-left: 200px;
     left: 0;
     transform-origin: center;
-
     animation: spin  4s linear infinite;
 }
 
@@ -116,4 +129,67 @@ h1, h2 {
         transform: rotate(360deg);
     }
     
+}
+
+
+.contact-form {
+    max-width: 600px;
+    background-color: #155252;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border: 1px solid #30C4D3;
+    margin: 20px auto;
+}
+
+.contact-form h3 {
+    padding-left: 15px;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+form {
+    padding: 10px;
+}
+
+
+
+form > * {
+    color: whitesmoke;
+    margin: 10px;
+}
+
+input, textarea {
+    border: 1px solid #30C4D3;
+    border-radius: 5px;
+    background-color: #006b7799;
+    padding: 10px;
+    width: 96%;
+}
+
+:where(input, textarea)::placeholder {
+    color: rgba(245, 245, 245, 0.575);
+}
+
+:where(input, textarea):focus {
+    outline: none;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+.submit-btn {
+    font-size: 1rem;
+    padding: 10px;
+    color: whitesmoke;
+    background-color:#30C4D3;
+    border: none;
+    border-radius: 50px;
+    width: 96%
+}
+
+.submit-btn:hover {
+    background-color:#006C77;
 }

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="script.js" defer></script>
         <title>Lapad</title>
     </head>
     <body>
@@ -18,7 +19,7 @@
 
                     <ul class="nav-links">
                         <li><a>Home</a></li>
-                        <li><a>Lapads</a></li>
+                        <li><a href="#lapads">Lapads</a></li>
                         <li><a>About</a></li>
                         <li><a>Contact Us</a></li>
                     </ul>
@@ -26,71 +27,56 @@
             </div>
             
         </header>
+        <main>
+            <h1>Lapad</h1>
+            <section>
+                <h2>Lapad</h2>
+
+            </section>
+            <section id="lapads">
+                <h2>Lapads</h2>
+
+                <h3>Spinning Lapad</h3>
+                <img src="lapad.svg" class="rotate">
+                <p>Spinning Lapad is inspired by OIIAI Cat</p>
+
+                <h3>Jumping Lapad</h3>
+                <img src="lapad.svg" class="jump">
+            </section>
+            <section>
+                <h2>About</h2>
+                <p>This is about Lapad.</p>
+            </section>
+            <section>
+                <h2>Contact</h2>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm" action="https://formspree.io/f/mgoragkv" method="POST" novalidate>
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" id="name" placeholder="E.g., John Doe" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="E.g., john@example.com" required>
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" placeholder="Vlog with Lapad/ Autograph / etc." required>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Tell something to Lapad" rows="8" cols="40" required></textarea>
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <p class="form-note" id="formNote"></p>
+
+                    </form>
+                </div>
+                
+            </section>
+
+        </main>
+        <footer>
+            <p>All rights to Lapad</p>
+        </footer>
 
 
 
 
-        <h1>Lapad</h1>
-        <img src="Bubbles Element.svg" class="bubble">
-
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <img src="lapad.svg" class="rotate">
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <img src="lapad.svg" class="lapad">
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <img src="lapad.svg" class="side-to-side">
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
+      
 
     </body>
 </html>
