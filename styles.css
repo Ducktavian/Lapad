@@ -1,0 +1,67 @@
+body {
+    position: relative;
+    background: radial-gradient(#E8F7FF, #30C4D3,#006C77);
+    height: 100vh;
+}
+
+.bubble {
+    position: absolute;
+    margin: 200px 0;
+    margin-left: 250px;
+    max-width: 200px;
+    max-height: 200px;
+    animation: slide 3s ease-in-out infinite alternate;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.lapad {
+    margin-left: 300px;
+    position: absolute;
+    animation: slide 0.3s ease-in infinite alternate;
+}
+
+.side-to-side {
+    position: absolute;
+    animation: side-to-side 2s ease-in-out infinite alternate;
+}
+
+.rotate {
+    position: absolute;
+    margin-left: 200px;
+    left: 0;
+    transform-origin: center;
+
+    animation: spin  4s linear infinite;
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(200px);
+    }
+}
+
+@keyframes side-to-side {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(200px);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
