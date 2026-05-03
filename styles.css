@@ -43,7 +43,8 @@ nav {
     text-decoration: none;
 }
 
-.nav-links a:visited {
+
+.nav-links a:any-link {
     color: whitesmoke;
 }
 
