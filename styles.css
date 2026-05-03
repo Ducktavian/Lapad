@@ -2,6 +2,58 @@ body {
     position: relative;
     background: radial-gradient(#E8F7FF, #30C4D3,#006C77);
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-container {
+    border-radius: 20px;
+    border: 2px solid whitesmoke;
+    width: 100%;
+    background-color: #155252;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.nav-links {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.nav-links > li {
+    font-size: 1.2rem;
+    margin: auto 15px;
+}
+
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #06434a;
+    padding: 10px;
+    margin: auto 0px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+.nav-logo::before {
+    content: "Lapad";
+    margin: auto 10px;
+}
+
+.nav-logo img {
+    height: 50px;
+    margin-right: 20px;
 }
 
 .bubble {
